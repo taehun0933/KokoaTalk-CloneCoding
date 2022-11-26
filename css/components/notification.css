@@ -1,0 +1,18 @@
+.notification {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.notification--message {
+  width: 20px;
+  height: 20px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+  box-sizing: border-box;
+}

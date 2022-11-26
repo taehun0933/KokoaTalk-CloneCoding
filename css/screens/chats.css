@@ -1,0 +1,14 @@
+.user-component__msg--wide-gap {
+  margin-top: 0.5rem;
+}
+
+.user-component__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  margin-bottom: 0.5rem;
+}

@@ -35,7 +35,7 @@
 
 .user-component__msg {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .user-component__music-box {
@@ -53,4 +53,8 @@
   color: limegreen;
   position: relative;
   top: -1px;
+}
+
+.user-component__time {
+  color: rgba(0, 0, 0, 0.4);
 }
