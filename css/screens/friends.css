@@ -1,3 +1,7 @@
+main {
+  padding-top: 100px;
+}
+
 .friends-display {
   display: flex;
   justify-content: center;
@@ -6,8 +10,7 @@
   text-decoration: none;
   padding: 13px 0px;
   background-color: #fafafa;
-  position: relative;
-  top: 95px;
+  margin-bottom: 10px;
 }
 
 .friends-display i {
@@ -15,4 +18,22 @@
   margin: 0px 5px;
   position: relative;
   bottom: 1px;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.user-channel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+}
+
+.friends-screen__channels .user-component {
+  margin-top: 1rem;
 }

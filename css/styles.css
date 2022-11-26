@@ -10,3 +10,7 @@
 /* screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+
+body {
+  height: 1000vh;
+}

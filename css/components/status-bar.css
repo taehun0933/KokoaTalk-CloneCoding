@@ -5,6 +5,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
+  top: 3px;
 }
 
 .status-bar__column:nth-child(1) {
