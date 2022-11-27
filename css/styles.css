@@ -12,7 +12,14 @@
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/chats.css";
+@import "screens/find.css";
 
 body {
   height: 1000vh;
+}
+
+.main-screen {
+  padding-top: 100px;
+  padding-left: var(--horizontal-space);
+  padding-right: var(--horizontal-space);
 }

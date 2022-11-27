@@ -14,20 +14,8 @@
   justify-content: center;
 }
 
-.nav__notification--message--position {
-  position: absolute;
-  left: 13px;
-  top: -12px;
-}
-
 .nav__link {
   color: #2e363e;
   text-decoration: none;
   position: relative;
-}
-
-.nav__notification--position {
-  position: absolute;
-  right: -6px;
-  top: -3px;
 }

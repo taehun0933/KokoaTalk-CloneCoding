@@ -5,6 +5,12 @@
   border-radius: 50%;
 }
 
+.notification--position {
+  position: absolute;
+  right: -6px;
+  top: -4.5px;
+}
+
 .notification--message {
   width: 20px;
   height: 20px;
@@ -15,4 +21,10 @@
   align-items: center;
   padding-top: 3px;
   box-sizing: border-box;
+}
+
+.notification--message--position {
+  position: absolute;
+  left: 13px;
+  top: -12px;
 }
