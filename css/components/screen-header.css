@@ -7,6 +7,7 @@
   width: 100%;
   box-sizing: border-box;
   top: 40px;
+  background-color: white;
 }
 
 .screen-header__title {
