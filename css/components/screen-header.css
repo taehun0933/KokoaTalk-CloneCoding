@@ -23,3 +23,7 @@
 .screen-header__icons i {
   margin-left: 15px;
 }
+
+.screen-header__icons__link {
+  color: black;
+}

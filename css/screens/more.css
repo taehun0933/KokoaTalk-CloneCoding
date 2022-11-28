@@ -1,0 +1,21 @@
+.screen-header__icons a:nth-child(3) {
+  position: relative;
+}
+
+.redIcon {
+  color: red;
+  opacity: 0.6;
+}
+
+.more-main .icons {
+  margin-top: 1.5rem;
+}
+
+.main-screen__suggestions {
+  border-top: var(--hazy-border);
+  padding-top: 1.5rem;
+}
+
+.main-screen__suggestions .icons {
+  margin-top: 0.5rem;
+}

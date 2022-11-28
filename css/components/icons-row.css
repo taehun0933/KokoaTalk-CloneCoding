@@ -1,0 +1,20 @@
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+  grid-auto-rows: 130px;
+}
+
+.icons__icon {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons__icon span {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
