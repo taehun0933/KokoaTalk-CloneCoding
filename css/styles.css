@@ -8,6 +8,7 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/icons-row.css";
+@import "components/back-screen-header.css";
 
 /* screens */
 @import "screens/login.css";
@@ -15,6 +16,8 @@
 @import "screens/chats.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
   height: 1000vh;
@@ -24,4 +27,9 @@ body {
   padding-top: 100px;
   padding-left: var(--horizontal-space);
   padding-right: var(--horizontal-space);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

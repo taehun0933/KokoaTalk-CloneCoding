@@ -1,0 +1,33 @@
+.back-screen-header {
+  display: grid;
+  position: fixed;
+  padding: var(--horizontal-space);
+  box-sizing: border-box;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  top: 30px;
+}
+
+.back-screen-header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  top: 4px;
+}
+
+.back-screen-header__icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.back-screen-header__back a {
+  color: inherit;
+}
+
+.back-screen-header__icons i:nth-child(2) {
+  margin-left: 0.5rem;
+}
