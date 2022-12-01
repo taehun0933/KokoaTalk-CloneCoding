@@ -29,3 +29,27 @@
 .friends-screen__channels .user-component {
   margin-top: 1rem;
 }
+
+@keyframes hiddenSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 100px;
+  animation: hiddenSplashScreen 0.7s ease-in-out forwards;
+  animation-delay: 1.5s;
+}

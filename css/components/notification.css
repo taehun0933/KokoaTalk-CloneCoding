@@ -1,8 +1,21 @@
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .notification {
   background-color: tomato;
   width: 5px;
   height: 5px;
   border-radius: 50%;
+  animation: notificationAnimation 1.5s ease-in-out infinite;
 }
 
 .notification--position {

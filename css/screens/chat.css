@@ -8,7 +8,19 @@
   background-color: #abc1d1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .chat-screen {
+  animation: fadeIn 1s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,10 +101,13 @@
 .message-input {
   display: flex;
   position: fixed;
-  bottom: 0%;
+  bottom: 0px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  padding: 5px 0px;
+  transition: all 0.3s ease-in-out;
 }
 
 .message-input__column:first-child {
@@ -100,11 +115,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 .message-input__column:nth-child(2) {
   width: 90%;
   position: relative;
-  display: flex;
+  /*
+   display: flex;
+   일반적으로 vw 등을 통해 자식이 부모보다 더 큰 크기를 가질수는 있으나,
+   flexbox일 경우는 불가능하다.
+   당연한 것이, flexbox는 자식들을 자신의 공간 안에 배치시키기 위해 존재하는 것이기 때문.
+   */
 }
 
 .message-input__column input {
@@ -112,6 +133,8 @@
   padding: 12px;
   border-radius: 1.5rem;
   border: var(--hazy-border);
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .input__column__icons {
@@ -119,6 +142,7 @@
   right: 10px;
   top: 3.5px;
   display: flex;
+  transition: all 0.3s ease-in-out;
 }
 
 .input__column__icons button {
@@ -138,4 +162,23 @@
 }
 .input__column__icons button > i {
   opacity: 1;
+}
+
+.message-input:focus-within .message-input__column:first-child {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.message-input:focus-within .input__column__icons {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.message-input:focus-within input {
+  width: 95vw;
+  transform: translateX(-10%) translateY(-70px);
+}
+
+.message-input:focus-within {
+  transform: translateY(70px);
 }
